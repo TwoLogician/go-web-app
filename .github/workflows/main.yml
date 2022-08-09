@@ -23,6 +23,8 @@ jobs:
 
     - name: Go Build
       run: go build -v -o ./published/ ./wiki.go
+
+    - name: Copy
       run: cp *.html ./published/
 
     - name: Log into registry ${{ env.REGISTRY }}
