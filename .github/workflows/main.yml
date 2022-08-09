@@ -22,7 +22,7 @@ jobs:
         go-version: 1.18
 
     - name: Go Build
-      run: go build -v -o ./published/ -v ./wiki.go
+      run: go build -v -o ./published/ ./wiki.go
 
     - name: Log into registry ${{ env.REGISTRY }}
       uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
