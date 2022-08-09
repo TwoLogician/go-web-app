@@ -23,6 +23,7 @@ jobs:
 
     - name: Go Build
       run: go build -v -o ./published/ ./wiki.go
+      run: cp *.html ./published/
 
     - name: Log into registry ${{ env.REGISTRY }}
       uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
