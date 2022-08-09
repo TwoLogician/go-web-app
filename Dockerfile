@@ -1,5 +1,4 @@
 FROM golang:1.18
-WORKDIR /app
+WORKDIR /usr/local/bin/app
 COPY  /published ./
-RUN chmod 755 /app
-CMD ["/app"]
+CMD ["/usr/local/bin/app"]
